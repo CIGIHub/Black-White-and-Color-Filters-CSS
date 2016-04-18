@@ -16,13 +16,16 @@
             display: table-cell;
         }
         img { 
-            width: 100%;
+            width: 75%;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
         }
         p {
-            text-align: center;
             font-size: 2em;
-            color: #6792d8;
+            background: #72a2f2;
             margin-top: -1em;
+            padding: .5em;
         }
     </style>
     <link rel="stylesheet" href="bw+c.css">
@@ -35,11 +38,18 @@
     <div class="col-25 colour-filter blue"><img class="" src="test.png" alt=""><br/><p>blue</p></div>
     <div class="col-25 colour-filter cyan"><img class="" src="test.png" alt=""><br/><p>cyan</p></div>
     <div class="col-25 colour-filter green"><img class="" src="test.png" alt=""><br/><p>green</p></div>
-    <hr>
+    <br>
     <div class="col-25 colour-filter yellow"><img class="" src="test.png" alt=""><br/><p>yellow</p></div>
     <div class="col-25 colour-filter purple"><img class="" src="test.png" alt=""><br/><p>purple</p></div>
     <div class="col-25 colour-filter orange"><img class="" src="test.png" alt=""><br/><p>orange</p></div>
     <div class="col-25 colour-filter grey"><img class="" src="test.png" alt=""><br/><p>grey</p></div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $( ".colour-filter" ).click(function() {
+            $( this ).toggleClass( "none" );
+        });
+    </script>
     
 </body>
 </html>
